@@ -1,25 +1,16 @@
-# RaspberryPiMouse_PS3
-Raspberry Pi Mouseに関する実験。Raspberry Pi MouseをPS3コントローラで操作させたり、Google Coral Edge TPU USB アクセラレータを繋いだりしています。
+# RaspberryPiMouse_xbox
+Raspberry Pi Mouseに関する実験。Raspberry Pi Mouseをxboxコントローラで操作させたり、Google Coral Edge TPU USB アクセラレータを繋いだりしています。
 
 ## ソースコードの詳細
-- <b>led_ps3.py</b><br>
-  前段階としてPS3コントローラで4つのLEDのLチカをさせていきます。
-  動作仕様は以下の通りです。
- 1. ◯：LED赤、△：LED緑、□：LED黄、×：LED白をそれぞれ点灯させる
- 2. 場所に対応する矢印を入力すると消灯させる
- 3. STARTボタンを入力するとプログラムが終了する
+- <b>Remocon_for_xbox.py</b>
+　xboxコントローラでRaspberry Pi Mouseを操作する
+ 1. A，B，X，YでLED0 〜 LED3を点灯・消灯
+ 2. 矢印キーでモータの制御(デジタル入力)
+ 3. 左スティックで前・後進，LT・RTで左右回転(アナログ入力)
+ 4. LBキーでブザー
+ 5. RBキーでプログラム終了
 
-- <b>PS3_multiLED.py</b><br>
-  前段階として、PS3コントローラで4つのLEDのLチカをさせていきます(完全形)。
-  最終的な動作仕様は以下の通りです。
- 1. ◯：LED赤、△：LED緑、□：LED黄、×：LED白をそれぞれ点灯させる
- 2. 場所に対応する矢印を入力すると消灯させる
- 3. STARTボタンを入力するとプログラムが終了する
- 4. 起動時に電池の残量を表示させる
- 5. PSボタン長押しでコントローラ＋ラズパイをシャットダウン
-
-- <b>RaspiMouse_Control.py</b><br>
-  PS3コントローラを用いてRaspberry Pi Mouseのコントロールを行うプログラム。
-
+- <b>led_xbox.py</b>
+　xboxコントローラで4つのLEDを操作する
 
 ## 関連記事
